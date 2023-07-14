@@ -19,7 +19,7 @@ function App() {
         progress={progress}
        
       />
-    <Router>
+    <Router  basename='/NewsApp'>
 
     <Navbar/>  
     <Routes>

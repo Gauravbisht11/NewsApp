@@ -19,7 +19,9 @@ function News(props) {
 
     }
     useEffect(()=>{
+
         start()
+         // eslint-disable-next-line
     },[])
 
 //Previous button

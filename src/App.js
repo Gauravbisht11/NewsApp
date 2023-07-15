@@ -19,17 +19,17 @@ function App() {
         progress={progress}
        
       />
-    <Router>
+    <Router basename='/NewsApp'>
 
     <Navbar/>  
     <Routes>
-          <Route path="/" element={<News pageSize={pageSize} key ="general" category="general"  setProgress={setProgress}/>}></Route>
-          <Route path="/general" element={<News pageSize={pageSize} key ="general"category="general"  setProgress={setProgress}/>} ></Route>
-          <Route path="/business" element={<News pageSize={pageSize}  key ="business" category="business"  setProgress={setProgress}/>}  ></Route>
-          <Route path="/sports" element={<News pageSize={pageSize}  key ="sports" category="sports"  setProgress={setProgress}/>}></Route>
-          <Route path="/technology" element={<News pageSize={pageSize} key ="technology"category="technology"  setProgress={setProgress}/>}></Route>
-          <Route path="/entertainment" element={<News pageSize={pageSize} key ="entertainment" category="entertainment"  setProgress={setProgress}/>}></Route>
-          <Route path="/politics" element={<News pageSize={pageSize} key ="politics" category="politics"  setProgress={setProgress}/>}></Route>
+          <Route exact path="/" element={<News pageSize={pageSize} key ="general" category="general"  setProgress={setProgress}/>}></Route>
+          <Route exact path="/general" element={<News pageSize={pageSize} key ="general"category="general"  setProgress={setProgress}/>} ></Route>
+          <Route exact path="/business" element={<News pageSize={pageSize}  key ="business" category="business"  setProgress={setProgress}/>}  ></Route>
+          <Route exact path="/sports" element={<News pageSize={pageSize}  key ="sports" category="sports"  setProgress={setProgress}/>}></Route>
+          <Route exact path="/technology" element={<News pageSize={pageSize} key ="technology"category="technology"  setProgress={setProgress}/>}></Route>
+          <Route exact path="/entertainment" element={<News pageSize={pageSize} key ="entertainment" category="entertainment"  setProgress={setProgress}/>}></Route>
+          <Route exact path="/politics" element={<News pageSize={pageSize} key ="politics" category="politics"  setProgress={setProgress}/>}></Route>
 
      </Routes> 
     </Router>

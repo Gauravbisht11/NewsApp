@@ -24,12 +24,12 @@ function App() {
     <Navbar/>  
     <Routes>
           <Route exact path="/NewsApp" element={<News pageSize={pageSize} key ="general" category="general"  setProgress={setProgress}/>}></Route>
-          <Route exact path="/general" element={<News pageSize={pageSize} key ="general"category="general"  setProgress={setProgress}/>} ></Route>
-          <Route exact path="/business" element={<News pageSize={pageSize}  key ="business" category="business"  setProgress={setProgress}/>}  ></Route>
-          <Route exact path="/sports" element={<News pageSize={pageSize}  key ="sports" category="sports"  setProgress={setProgress}/>}></Route>
-          <Route exact path="/technology" element={<News pageSize={pageSize} key ="technology"category="technology"  setProgress={setProgress}/>}></Route>
-          <Route exact path="/entertainment" element={<News pageSize={pageSize} key ="entertainment" category="entertainment"  setProgress={setProgress}/>}></Route>
-          <Route exact path="/politics" element={<News pageSize={pageSize} key ="politics" category="politics"  setProgress={setProgress}/>}></Route>
+          <Route exact path="/NewsApp/general" element={<News pageSize={pageSize} key ="general"category="general"  setProgress={setProgress}/>} ></Route>
+          <Route exact path="/NewsApp/business" element={<News pageSize={pageSize}  key ="business" category="business"  setProgress={setProgress}/>}  ></Route>
+          <Route exact path="/NewsApp/sports" element={<News pageSize={pageSize}  key ="sports" category="sports"  setProgress={setProgress}/>}></Route>
+          <Route exact path="/NewsApp/technology" element={<News pageSize={pageSize} key ="technology"category="technology"  setProgress={setProgress}/>}></Route>
+          <Route exact path="/NewsApp/entertainment" element={<News pageSize={pageSize} key ="entertainment" category="entertainment"  setProgress={setProgress}/>}></Route>
+          <Route exact path="/NewsApp/politics" element={<News pageSize={pageSize} key ="politics" category="politics"  setProgress={setProgress}/>}></Route>
 
      </Routes> 
     </Router>

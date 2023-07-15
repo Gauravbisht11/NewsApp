@@ -17,12 +17,12 @@ function Navbar() {
                 <Link className="nav-link " aria-current="page" to="/">Home</Link>
               </li>
 
-              <li className="nav-item"><Link className="nav-link " aria-current="page" to="/general">General</Link></li>
-              <li className="nav-item"><Link className="nav-link " aria-current="page" to="/business">Business</Link></li>
-              <li className="nav-item"><Link className="nav-link " aria-current="page" to="/sports">Sports</Link></li>
-              <li className="nav-item"><Link className="nav-link " aria-current="page" to="/technology">Technology</Link></li>
-              <li className="nav-item"><Link className="nav-link " aria-current="page" to="/entertainment">Entertainment</Link></li>
-              <li className="nav-item"><Link className="nav-link " aria-current="page" to="/politics">Politics</Link></li>
+              <li className="nav-item"><Link className="nav-link " aria-current="page" to="general">General</Link></li>
+              <li className="nav-item"><Link className="nav-link " aria-current="page" to="business">Business</Link></li>
+              <li className="nav-item"><Link className="nav-link " aria-current="page" to="sports">Sports</Link></li>
+              <li className="nav-item"><Link className="nav-link " aria-current="page" to="technology">Technology</Link></li>
+              <li className="nav-item"><Link className="nav-link " aria-current="page" to="entertainment">Entertainment</Link></li>
+              <li className="nav-item"><Link className="nav-link " aria-current="page" to="politics">Politics</Link></li>
 
 
 

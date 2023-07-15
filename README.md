@@ -1,9 +1,4 @@
-# As this website consists of api calls so can't host it  on github pages but can be deploy on any server with the easy steps
-# clone the repo
-# open any code editor 
-# write npm run start on terminal hit enter
-# the app will run at your browser at (http://localhost:3000)
-
+# As this website consists of api calls(which are not present in the build folder) so can't host it  on github pages but can be deploy on any server by just cloning it 
 # for brief can read and follow the below steps.....
 # Getting Started with Create React App
 

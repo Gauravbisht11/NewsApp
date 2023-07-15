@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import News from './components/News';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route
   
@@ -19,7 +19,7 @@ function App() {
         progress={progress}
        
       />
-    <Router basename='/NewsApp'>
+    <Route>
 
     <Navbar/>  
     <Routes>
@@ -32,7 +32,7 @@ function App() {
           <Route exact path="/politics" element={<News pageSize={pageSize} key ="politics" category="politics"  setProgress={setProgress}/>}></Route>
 
      </Routes> 
-    </Router>
+    </Route>
     
     </>
   );

@@ -19,7 +19,7 @@ function App() {
         progress={progress}
        
       />
-    <Router basename='/NewsApp'>
+    <Router basename={process.env.PUBLIC_URL}>
 
     <Navbar/>  
     <Routes>

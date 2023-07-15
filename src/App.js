@@ -23,7 +23,7 @@ function App() {
 
     <Navbar/>  
     <Routes>
-          <Route exact path="/" element={<News pageSize={pageSize} key ="general" category="general"  setProgress={setProgress}/>}></Route>
+          <Route exact path="/NewsApp" element={<News pageSize={pageSize} key ="general" category="general"  setProgress={setProgress}/>}></Route>
           <Route exact path="/general" element={<News pageSize={pageSize} key ="general"category="general"  setProgress={setProgress}/>} ></Route>
           <Route exact path="/business" element={<News pageSize={pageSize}  key ="business" category="business"  setProgress={setProgress}/>}  ></Route>
           <Route exact path="/sports" element={<News pageSize={pageSize}  key ="sports" category="sports"  setProgress={setProgress}/>}></Route>

@@ -1,4 +1,7 @@
-# As this website consists of api calls(which are not present in the build folder) so can't host it  on github pages but can be deploy on any server by just cloning it 
+# As this website consists of api calls from NewsAPI.org NewsAPI blocks browser requests from public domains (like GitHub Pages) on the free plan  
+# It shows the error as :  Failed to load resource: the server responded with a status of 426 () which is the upgradation error .
+# solution is the use id you want to use api from NewsAPI.org for free then deplo it on the local server.
+ 
 # for brief can read and follow the below steps.....
 # Getting Started with Create React App
 

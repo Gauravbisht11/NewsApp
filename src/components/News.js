@@ -9,16 +9,13 @@ function News(props) {
     const [load,setload]=useState(true)
     const start=async()=>{
       setload(true)
-      props.setProgress(10);
-       const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-  const apiUrl = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=c38ffcbe4f1f46fd9eeb66d76e22f0fd&pageSize=${props.pageSize}&page=${page}`;
-  const response = await fetch(proxyUrl + apiUrl);
-  const prasedData = await response.json();
-  props.setProgress(100);
-  setload(false);
-  setArticles(prasedData.articles);
-  setTotalResults(prasedData.totalResults);
-
+      props.setProgress(10)
+        const response= await fetch (`https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=c38ffcbe4f1f46fd9eeb66d76e22f0fd&pageSize=${props.pageSize}&page=${page}`);
+        const prasedData=await response.json()
+        props.setProgress(100)
+        setload(false)
+       setArticles(prasedData.articles)
+       setTotalResults(prasedData.totalResults)
 
     }
     useEffect(()=>{
@@ -28,32 +25,27 @@ function News(props) {
     },[])
 
 //Previous button
-const handlePrevious = async () => {
-  setload(true);
-  props.setProgress(10);
-  const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-  const apiUrl = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=c38ffcbe4f1f46fd9eeb66d76e22f0fd&pageSize=${props.pageSize}&page=${page - 1}`;
-  const response = await fetch(proxyUrl + apiUrl);
-  setPage(page - 1);
-  const prasedData = await response.json();
-  props.setProgress(100);
-  setload(false);
-  setArticles(prasedData.articles);
-};
-    
+const handlePrevious=async()=>{
+  setload(true)
+  props.setProgress(10)
+    const response= await fetch (`https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=c38ffcbe4f1f46fd9eeb66d76e22f0fd&pageSize=${props.pageSize}&page=${page-1}`);
+   setPage(page-1)
+    const prasedData=await response.json()
+    props.setProgress(100)
+    setload(false)
+       setArticles(prasedData.articles)
+}
 //Next button
-const handleNext = async () => {
-  setload(true);
-  props.setProgress(10);
-  const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-  const apiUrl = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=c38ffcbe4f1f46fd9eeb66d76e22f0fd&pageSize=${props.pageSize}&page=${page + 1}`;
-  const response = await fetch(proxyUrl + apiUrl);
-  setPage(page + 1);
-  const prasedData = await response.json();
-  props.setProgress(100);
-  setload(false);
-  setArticles(prasedData.articles);
-};
+const handleNext=async()=>{
+  setload(true)
+  props.setProgress(10)
+    const response= await fetch (`https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=c38ffcbe4f1f46fd9eeb66d76e22f0fd&pageSize=${props.pageSize}&page=${page+1}`);
+    setPage(page+1)
+    const prasedData=await response.json()
+    props.setProgress(100)
+    setload(false)
+       setArticles(prasedData.articles)
+}
 
   return (
     <div className='container'>
